@@ -1,5 +1,5 @@
-
-public class Presentacion extends Cultural {
+import java.io.Serializable;
+public class Presentacion extends Cultural implements Serializable {
 	private boolean GalaOrepre;
 	public Presentacion(String nom, String lug, String descr,  double dura, boolean GoR){
 		super(nom, lug, descr,dura);

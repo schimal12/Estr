@@ -1,5 +1,5 @@
-
-public class Exposiciones extends Cultural{
+import java.io.Serializable;
+public class Exposiciones extends Cultural implements Serializable{
 	private String taller;
 	public Exposiciones(String nom, String lug, String desc, double dura, String tall){
 		super(nom, lug, desc,dura);

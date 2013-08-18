@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 public class Main1{
 	public static void main(String args []){
-	
+		Serializador serializar=new Serializador();
 		System.out.println("Haz un paquete con los diferentos eventos que tenemos");
 		int numEventos =Integer.parseInt( JOptionPane.showInputDialog("Cuantos eventos quieres en tu paquete"));
 		int numEventosDisponibles=numEventos;
@@ -24,6 +24,7 @@ public class Main1{
 					case 1: 
 					String nombreTaller = JOptionPane.showInputDialog("Dame el nombre del taller");
 					evento[i] = new Exposiciones(nombre, lugar, descripcion,duracion, nombreTaller);
+           				serializar.escribirArchivo(evento[i]);				
 					System.out.println("Evento cultural creado");
 					break;
 					case 2:
@@ -33,6 +34,7 @@ public class Main1{
 					GoR = true;
 					}else{GoR = false; }
 			        	evento[i]=new Presentacion(nombre, lugar, descripcion,duracion, GoR);
+					serializar.escribirArchivo(evento[i]);
 					System.out.println("Evento Cultural creado");
 					break;
 				}
@@ -44,12 +46,14 @@ public class Main1{
 				boolean torneo = Boolean.parseBoolean(JOptionPane.showInputDialog("Escribe true si es de un torneo y false si no lo es"));
 				String tipoDeporte = JOptionPane.showInputDialog("Dime el tipo de deporte");
 				evento[i]=new Deportivo(nombre, lugar, descripcion,tipoDeporte, torneo);
+				serializar.escribirArchivo(evento[i]);
 				System.out.println("Evento deportivo creado");	
 				break;		
 
 			}
 		}
 	Paquete p1 = new Paquete(evento);
-
+	serializar.leerArchivo("Eventos.ser");
 	}	
+	
 }

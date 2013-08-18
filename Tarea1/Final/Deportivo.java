@@ -1,5 +1,5 @@
-
-public class Deportivo extends Evento{
+import java.io.Serializable;
+public class Deportivo extends Evento implements Serializable{
 	private String tipoD;
 	private boolean torneo;
 	public Deportivo(String nom, String lug, String desc, String tD, boolean torn){
