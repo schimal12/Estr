@@ -14,6 +14,4 @@ public class Deportivo extends Evento{
 			return 0;
 		}	
 	}
-	/*Super bien amor, solo falto leer la parte que decía que los deportivos se cobraban 
-	si eran parte de un torneo*/
 }

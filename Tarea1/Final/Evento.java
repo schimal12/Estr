@@ -11,5 +11,4 @@ public abstract class Evento implements Cobrable {
 	}
 }
 /*Super bien esta clase */ 
-/* Pero recuerda, la clase Evento es una clase padre y las variables de una clase padre deben
-ser protectec*/
+/* Pero recuerda, la clase Evento es una clase padre y las variables de una 
