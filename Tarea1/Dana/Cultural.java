@@ -5,5 +5,5 @@ public abstract class Cultural extends Evento{
 		super(nom, lug, desc);
 		this.duracion=dura;
 	}
-	
+	public int cobrable();
 }

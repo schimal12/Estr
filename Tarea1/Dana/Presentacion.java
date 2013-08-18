@@ -5,12 +5,14 @@ public class Presentacion extends Cultural {
 		super(dura);
 		this.GalaOrepre=GoR;
 	}
-	public int cobrable(boolean GoR){
-		if (GoR==true){
+	public int cobrable(){ //Ya no es necesario poner argumentos por dos razones
+	// 1 ) La interfaz no especificaba que necesitarás argumentos en tu metodo
+	// 2 ) GalaOrepre es una variable dentro de nuestra clase 
+		if (Galaorepre==true){
 		return 50;
 		}
 		else{
 			return 30;
 		}
-		}
+	}
 }
