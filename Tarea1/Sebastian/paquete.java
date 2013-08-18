@@ -1,3 +1,4 @@
+
 public class paquete {
 	private evento []eventos;
 	private int cont_;
@@ -10,3 +11,6 @@ public class paquete {
 		eventos[cont_]=e1;
 		cont_++;
 	}
+	
+}
+
