@@ -8,5 +8,4 @@ public abstract class Evento implements Cobrable {
 		this.lugar=lug;
 		this.descripcion=desc;		
 	}
-	public int cobrable();
 }

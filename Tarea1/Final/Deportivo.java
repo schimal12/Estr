@@ -5,7 +5,7 @@ public class Deportivo extends Evento{
 	public Deportivo(String nom, String lug, String desc, String tD, boolean torn){
 		super(nom, lug, desc);
 		this.tipoD=tD;
-		this.torneo=torn 
+		this.torneo=torn; 
 	}
 	public int cobrable(){
 		if(torneo == true){

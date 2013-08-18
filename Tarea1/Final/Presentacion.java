@@ -6,15 +6,15 @@ public class Presentacion extends Cultural {
 		this.GalaOrepre=GoR;
 	}
 	public int cobrable(){ 
-		if(lug.equalsIgnoreCas("cancha"){
-			if (Galaorepre==true){
+		if(lugar.equalsIgnoreCase("cancha")){
+			if (GalaOrepre==true){
 			return 80;
 			}
 			else{
 			return 30;
 			}
 		}else{
-			if(Galaorepre==true){
+			if(GalaOrepre==true){
 				return 50;
 			}
 			else{
