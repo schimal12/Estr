@@ -53,6 +53,7 @@ public class Main1{
 			}
 		}
 	Paquete p1 = new Paquete(evento);
+	System.out.println("Imprimiendo Eventos");
 	serializar.leerArchivo("Eventos.ser");
 	}	
 	
