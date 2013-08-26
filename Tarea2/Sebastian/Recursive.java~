@@ -30,13 +30,6 @@ static String recursivo;
 		}
 	}
 	public static int minimo(int []arr, int n, int m){
-		if(n<0 || m>arr.length){
-			try{
-			throw new NumerosException();
-			}catch(NumerosException e){
-				e.showMessageError("Ingresa otro rango");
-			}
-		}
 		if(n==arr.length){
 			return n;
 		}
