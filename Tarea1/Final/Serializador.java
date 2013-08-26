@@ -23,7 +23,7 @@ public class Serializador{
 				lectorArchivo  = new ObjectInputStream(new FileInputStream(archivo));
 			while(true){
 				a =lectorArchivo.readObject();
-				System.out.println("Evento "+((Evento) a).getNombre());
+				System.out.println("Evento "+((Evento)a).getNombre());
 			}
 		}catch(IOException e){
 			e.printStackTrace();
