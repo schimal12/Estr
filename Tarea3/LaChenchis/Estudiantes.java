@@ -34,8 +34,8 @@ public class Estudiantes {
 		return promedioAux/numeroMaterias;
 	}
 	//Agregamos por composición materias 
-	public void agregarMaterias(String clave, int calificacionFinal){
-		Materia m1= new Materia(clave, calificacionFinal);
+	public void agregarMaterias(String clave, String nombre, int calificacion){
+		Materia m1= new Materia(clave, nombre, calificacion);
 		mat[contador]=m1;
 		contador++;
 	}
