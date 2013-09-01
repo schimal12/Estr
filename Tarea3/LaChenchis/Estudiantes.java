@@ -1,9 +1,8 @@
-
 public class Estudiantes {
-	protected String carrera;
-	protected String nombre;
-	protected String clavemateria;
-	
+	private String carrera;
+	private String nombre;
+	private String clavemateria;
+	private Materias [] mat;
 	public Alumno(String carr, String nom, String CM){
 		this.carrera=carr;
 		this.nombre=nom;
