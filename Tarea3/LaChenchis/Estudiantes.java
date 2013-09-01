@@ -28,10 +28,13 @@ public class Estudiante {
 	//Calculamos el promedio
 	public double promedio(){
 		double promedioAux=0;
+		double pF;
 		for(int i=0; i<numeroMaterias;i++){
 			promedioAux += this.getMaterias()[i].getCalificacion();
 		}
-		return promedioAux/numeroMaterias;
+	 
+		pF=promedioAux/numeroMaterias;
+			return pF;
 	}
 	//Agregamos por composición materias 
 	public void agregarMaterias(String clave, String nombre, int calificacion){
@@ -39,17 +42,5 @@ public class Estudiante {
 		mat[contador]=m1;
 		contador++;
 	}
-	public int compareTo(Estudiante e1){
-		if (this.promediodF>=est.promedioF){
-			if(this.promedioF==est.promedioF){
-			return 0;
-			}
-			else{ 
-				return 1;
-		}
-		else {
-		return -1;
-		}
-	}
-
+	
 }
