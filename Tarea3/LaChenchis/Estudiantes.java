@@ -1,4 +1,3 @@
-
 public class Estudiante implements Comparable<Estudiante>{
     private String carrera;
     private String nombre;
@@ -6,7 +5,7 @@ public class Estudiante implements Comparable<Estudiante>{
     private Materia [ ] mat;
     private int contador;
     private int cant;
-    public Estudiante(String carrera, String nombre, int numeroMaterias, int contador, int cant){
+    public Estudiante(String carrera, String nombre, int numeroMaterias, int cant){
         this.carrera=carrera;
         this.nombre=nombre;
         this.numeroMaterias=numeroMaterias;
