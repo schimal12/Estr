@@ -40,10 +40,16 @@ public class Estudiante {
 		contador++;
 	}
 	public int compareTo(Estudiante e1){
-		if (this.promediodF==est.promedioF){
+		if (this.promediodF>=est.promedioF){
+			if(this.promedioF==est.promedioF){
 			return 0;
+			}
+			else{ 
+				return 1;
 		}
-		
+		else {
+		return -1;
+		}
 	}
 
 }
