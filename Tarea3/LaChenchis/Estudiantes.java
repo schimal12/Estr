@@ -1,3 +1,4 @@
+//Falta ponerle la interfaz comparable 
 public class Estudiantes {
 	private String carrera;
 	private String nombre;
@@ -24,5 +25,20 @@ public class Estudiantes {
 	public String getCarrera(){
 		return carrera;
 	}
+	//Calculamos el promedio
+	public double promedio(){
+		double promedioAux=0;
+		for(int i=0; i<numeroMaterias;i++){
+			promedioAux += this.getMaterias()[i].getCalificacion();
+		}
+		return promedioAux/numeroMaterias;
+	}
+	//Agregamos por composición materias 
+	public void agregarMaterias(String clave, int calificacionFinal){
+		Materia m1= new Materia(clave, calificacionFinal);
+		mat[contador]=m1;
+		contador++;
+	}
+	//Falta el método compareTo
 
 }
