@@ -1,5 +1,5 @@
 //Falta ponerle la interfaz comparable 
-public class Estudiantes {
+public class Estudiante {
 	private String carrera;
 	private String nombre;
 	private int numeroMaterias;
@@ -39,6 +39,11 @@ public class Estudiantes {
 		mat[contador]=m1;
 		contador++;
 	}
-	//Falta el método compareTo
+	public int compareTo(Estudiante e1){
+		if (this.promediodF==est.promedioF){
+			return 0;
+		}
+		
+	}
 
 }
