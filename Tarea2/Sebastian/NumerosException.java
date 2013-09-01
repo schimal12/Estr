@@ -1,4 +1,4 @@
-public class NumerosException extends Excpetion{
+public class NumerosException extends Exception{
 	public NumerosException()
 	{
 	

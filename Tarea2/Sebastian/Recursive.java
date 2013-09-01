@@ -1,16 +1,14 @@
 
 public class Recursive {
-static String recursivo;
-	public static boolean Palindromis(String s){
-		//Caso Base 
-		if(s.length()==0 || s.length()==1){
-			return true; // 	
-		}else{
-			if(s.charAt(0) == s.charAt(s.length()-1)){
-				return Palindromis(s.substring(1, s.length()-1));
-			}
+static String recursivo;	
+	public boolean pali(String pali){
+		if (pali.length()==0 || pali.length()==1){
+			return true;
 		}
-		return false;
+		if (pali.charAt(0)==pali.charAt(pali.length()-1)){
+			return pali(pali.substring(1,pali.length()-1));
+		}
+			return false;
 	}
 	public static String binario(int a){
 	
@@ -22,27 +20,33 @@ static String recursivo;
 			return binario(a/2)+(a%2);
 		}
 	}
-	public static  int multiplicatoria(int n){
+	public double mult(double n){
+		if (n<=0){
+			return 0;
+		}
 		if(n==1){
 			return 1;
-		}else{
-			return 2*multiplicatoria(n-1)-(multiplicatoria(n-1)*(multiplicatoria(n-1)*multiplicatoria(n-1)));
+		}
+		else{
+			return (2*mult(n-1)+n)-(mult(n-1)+n*mult(n-1)+n*mult(n-1)+n);
 		}
 	}
-	public static int minimo(int []arr, int n, int m){
-		if(n<0 || m>arr.length){
+
+	public int minimo(int[] arr, int n, int min){
+		if(n<0 || min>arr.length){
 			try{
-			throw new NumerosException();
+			throw new NumerosException("No se puede");
 			}catch(NumerosException e){
-				e.showMessageError("Ingresa otro rango");
+				e.printStackTrace();
 			}
 		}
-		if(n==arr.length){
-			return n;
+		if(n == arr.length) {
+			return min;
 		}
-			if(arr[n]>m){
-				m=arr[n];
-			}
-			return minimo(arr, n+1,m);
+		if(arr[n]<min){ 
+			min=arr[n];
+		}
+		
+		return minimo(arr,n+1,min);
 	}
 }
