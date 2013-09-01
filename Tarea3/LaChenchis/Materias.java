@@ -1,4 +1,3 @@
-
 public class Materia {
 	private String clave;
 	private String nombre;
@@ -8,6 +7,10 @@ public class Materia {
 		this.nombre=no;
 		this.calificacion=calif;
 	}
+	public int getClave(){
+		return clave;
+	}
+
 	
 
 }
